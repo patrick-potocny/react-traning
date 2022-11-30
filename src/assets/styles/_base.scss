@@ -1,0 +1,17 @@
+$ff-main: 'Oswald', sans-serif;
+$clr-main: #494b48;
+$clr-text: #61DBFB;
+$clr-bg: #c2c2c2;
+
+@mixin halfPage {
+  width: 50%;
+  height: 100%;
+  padding: 2rem;
+}
+
+body {
+  font-family: $ff-main;
+  color: $clr-text;
+  background-color: $clr-bg;
+}
+

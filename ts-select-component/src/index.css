@@ -1,0 +1,75 @@
+.select-box {
+  border: 1px solid black;
+  max-width: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1em;
+  position: relative;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.remove {
+  border: none;
+  background-color: transparent;
+  font-size: 1.5em;
+  color: #777;
+}
+
+.remove:hover {
+  cursor: pointer;
+}
+
+.divider {
+  height: 2.3em;
+  border: 1px solid #777;
+  margin-inline: 1em;
+}
+
+.caret {
+  translate: 0 25%;
+  font-size: 1.5em;
+  border: .25em solid transparent;
+  border-top-color: #777;
+}
+
+.caret:hover {
+  cursor: pointer;
+}
+
+.options {
+  z-index: 100;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding-left: 0;
+  list-style: none;
+  border: 1px solid black;
+  max-width: 20em;
+  width: 100%;
+}
+
+.options.closed {
+  display: none;
+}
+
+.options.open {
+  display: block;
+}
+
+.option {
+  font-size: 1.2em;
+}
+
+.option:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.option:not(:last-of-type) {
+  border-bottom: 1px solid black;
+}
